@@ -778,7 +778,7 @@ main .product-container .med-con:hover{
     gap: 1rem;
 }
 .user-profile-head .cart-settings span{
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 300;
     color: white;
     transition: var(--transition);
