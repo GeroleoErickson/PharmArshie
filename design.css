@@ -492,7 +492,7 @@ main .product-container{
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: 1rem;
-    padding: 0 2rem 8rem 2rem;
+    padding: 0 2rem 2rem;
 }
 
 main .product-container .med-con{
@@ -612,7 +612,7 @@ main .product-container .med-con:hover{
         padding: 1rem;
     }
     main .product-container{
-        padding: 1rem 1rem 6.5rem 1rem;
+        padding: 1rem 1rem 6rem 1rem;
     }
     main .products-categories .product-container .med-con .price,
     main .products-categories .product-container .med-con .product-details{
