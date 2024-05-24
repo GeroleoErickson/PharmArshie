@@ -265,6 +265,14 @@ header .blur2{
     }
 }
 @media (max-width: 780px){
+    header{
+        padding: 1rem;
+        gap: 1rem;
+    }
+    header .search{
+        gap: .8rem;
+
+    }
     .bottom-bar{
         position: fixed;
         justify-content: space-evenly;
@@ -274,7 +282,7 @@ header .blur2{
         align-items: center;
         width: 100%;
         height: fit-content;
-        padding: 1rem 2rem 2rem;
+        padding: 1rem;
         z-index: 99;
     }
     .bottom-bar .bottom-ctrls{
@@ -286,6 +294,11 @@ header .blur2{
         border-radius: 2rem;
         padding: 1rem;
         box-shadow: var(--shadow);
+    }
+    .bottom-bar a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .bottom-bar a span{
         font-size: 2rem;
@@ -369,6 +382,13 @@ header .blur2{
     }
 }
 @media (max-width: 480px){
+    header{
+        padding: 1rem;
+    }
+    header .search{
+        gap: .8rem;
+
+    }
     header .profile .prof p{
         display: none;
     }
@@ -376,8 +396,16 @@ header .blur2{
         display: none;
     }
     
+    
 }
 @media (max-width: 380px){
+    header{
+        padding: 1rem;
+        gap: 1rem;
+    }
+    header .search{
+        gap: .8rem;
+    }
     header .profile .prof p{
         display: none;
     }
@@ -395,6 +423,8 @@ header .blur2{
         padding: .6rem;
     }
 }
+
+
 /*End of Navigational Bar */
 /*End of Header */
 
@@ -445,7 +475,7 @@ main .products-categories{
     overflow-y: hidden;
     overflow-x: auto;
     background-color: var(--background-color-light);
-    border-radius: 2rem;
+    border-radius: 2rem 2rem 0 0;
     z-index: 999;
 }
 .products-categories .categories a{
@@ -566,7 +596,10 @@ main .product-container .med-con:hover{
     
 }
 
-@media (max-width: 360px){
+@media (max-width: 380px){
+    main{
+        padding-bottom: 0;
+    }
     main .product-container .med-con{
         background-color: white;
         border-radius: 1.5rem;
@@ -574,6 +607,49 @@ main .product-container .med-con:hover{
         flex: 1 0 120px;
         max-width: 200px;
         height: fit-content;
+    }
+    main .banner{
+        padding: 0 1rem 1rem;
+    }
+    .products-categories .categories{
+        padding: 1rem;
+    }
+    main .product-container{
+        padding: 1rem 1rem 6rem 1rem;
+    }
+    main .products-categories .product-container .med-con .price,
+    main .products-categories .product-container .med-con .product-details{
+        padding: .3rem .8rem .8rem;
+    }
+    main .products-categories .product-container .med-con .price h3{
+        font-size: var(--bodyfont);
+    }
+    main .product-container .med-con .ratings h2 {
+        font-size: var(--bodyfont);
+    }
+    main .product-container .med-con .ratings .material-symbols-rounded{
+        font-size: 1rem;
+    }
+    main .products-categories .product-container .med-con .product-details h2 {
+        font-size: var(--bodyfont);
+    }
+    main .products-categories .product-container .med-con .product-details p{
+        font-size: .6rem;
+    }
+    main .products-categories .product-container .med-con .price span {
+        aspect-ratio: 1 / 1;
+        font-size: 1.5rem;
+        border-radius: 0.8rem;
+        color: white;
+    }
+    .bottom-bar{
+        padding: 1rem;
+    }
+    .products-categories .categories a {
+        font-size: var(--bodyfont);
+    }
+    .bottom-bar a span{
+        font-size: 1.5rem;
     }
 }
 
@@ -747,6 +823,14 @@ main .product-container .med-con:hover{
 }
 
 @media (max-width: 780px) {
+    .user-profile-head{
+        padding: 1rem;
+        gap: 1rem;
+    }
+    .user-profile {
+        width: 100%;
+        padding: 0 1rem 1rem 1rem;
+    }
     .user-profile-head .greet .greetings h2{
         color: white;
         font-weight: 500;
@@ -774,9 +858,16 @@ main .product-container .med-con:hover{
     .user-profile-head .account-profile .addresses p{
         font-size: .8rem;
     }
+    address {
+        padding: 0 1rem 1rem 1rem;
+    }
 }
 
 @media (max-width: 560px) {
+    .user-profile-head{
+        padding: 1rem;
+        gap: 1.5rem;
+    }
     .user-profile-head .greet .greetings h2{
         color: white;
         font-weight: 500;
@@ -815,6 +906,30 @@ main .product-container .med-con:hover{
     .user-profile-head .account-profile .addresses p{
         font-size: .8rem;
     }
+    address {
+        padding: 0 1rem 1rem 1rem;
+    }
+}
+@media (max-width: 400px){
+    .user-profile-head{
+        padding: 1rem;
+        gap: 1rem;
+    }
+    .user-profile{
+        padding: 0 1rem 1rem 1rem;
+    }
+    .user-profile-head .account-profile .account .account-details h3 {
+        font-size: 1rem;
+    }
+    .user-profile-head .account-profile .account .account-details p{
+        font-size: .6rem;
+    }
+    .user-profile-head .cart-settings {
+        gap: .5rem;
+    }
+    .user-profile-head .cart-settings span {
+        font-size: 1.3rem;
+    }
 }
 
 address{
@@ -832,14 +947,28 @@ address .address-details{
 address h1{
     width: 100%;
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: white;
 }
 address p{
     font-size: 1rem;
     color: white;
 }
-
+@media (max-width: 380px) {
+    address{
+        width: 100%;
+        padding: 0 1rem 1rem 1rem;
+    }
+    address .address-details {
+        gap: .5rem;
+    }
+    address h1 {
+        font-size: 1rem;
+    }
+    address p {
+        font-size: var(--bodyfont);
+    }
+}
 main .account-content{
     width: 100%;
     height: fit-content;
@@ -1182,11 +1311,11 @@ main .account-container .orders-con{
     main .account-content{
         width: 100%;
         height: fit-content;
-        gap: 2rem;
+        gap: 1rem;
         display: flex;
         align-items: center;
         border-radius: 2rem 2rem 0 0;
-        padding: 0 2rem 8.5rem 2rem;
+        padding: 0 1rem 6rem 1rem;
     }
     main .account-container{
         background-color: var(--background-color-light);
@@ -1267,5 +1396,52 @@ main .account-container .orders-con{
     }
     .account-container .orders-con .order-categories p{
         font-size: var(--bodyfont);
+    }
+    
+}
+
+@media (max-width: 380px){
+    main .account-content {
+        padding: 0 1rem 5.5rem 1rem;
+    }
+    main .account-content {
+        gap: 1rem;
+    }
+    .reminder-con .reminder-task .reminder-details {
+        padding: .5rem;
+        border-radius: 1rem;
+        gap: 1rem;
+    }
+    .reminder-con .reminder-task .time h1 {
+        font-size: 1rem;
+    }
+    .reminder-con .reminder-task .time h2{
+        font-size: var(--bodyfont);
+    }
+    .reminder-con .reminder-task .reminder-details .full-details .med-details .intake p {
+        font-size: .5rem;
+        line-height: .6rem;
+    }
+    .account-container .orders-con .purchase-history h1, 
+    .account-container .reminder-con .reminders h1 {
+        font-size: 1rem;
+    }
+    .account-container .orders-con .purchase-history span, 
+    .account-container .reminder-con .reminders span{
+        padding: .4rem;
+        font-size: 1rem;
+        border-radius: .8rem;
+    }
+    .edit {
+        gap: .5rem;
+    }
+    .account-container .orders-con .order-categories p {
+        font-size: .55rem;
+    }
+    main .account-container .orders-con {
+        gap: 1rem;
+    }
+    .account-container .orders-con .order-categories {
+        padding: .8rem;
     }
 }
