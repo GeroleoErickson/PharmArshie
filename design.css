@@ -560,7 +560,7 @@ main .products-categories .product-container .med-con .price span{
     background-color: var(--primary-color);
     border-radius: 0.8rem;
     color: white;
-
+    cursor: pointer;
 }
 main .product-container .med-con:hover{
     scale: 1.03;
@@ -652,21 +652,9 @@ main .product-container .med-con:hover{
 }
 
 
-/* End of Main */
 
 
 
-
-
-
-/* Item Pop-Up */
-
-/* End of item Pop up */
-
-
-
-
-/* Toggle button darkmode*/
 /* The switch - the box around the slider */
 .switch {
     display: block;
@@ -716,12 +704,12 @@ main .product-container .med-con:hover{
   }
   
   input:checked + .slider {
-    background-color: rgba(18, 59, 59, 0.05);
+    background-color: #303136;
   }
   
   input:checked + .slider:before {
     left: calc(100% - (var(--size-of-icon,1.4em) + var(--slider-offset,0.3em)));
-    background: hsla(230, 6%, 20%, 0);
+    background: #303136;
     /* change the value of second inset in box-shadow to change the angle and direction of the moon  */
     box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
   }
@@ -959,7 +947,7 @@ address p{
     font-size: 1rem;
     font-weight: 500;
 }
-@media (max-width: 380px) {
+@media (max-width: 780px) {
     address{
         width: 100%;
         padding: 0 1rem 1rem 1rem;
@@ -967,6 +955,14 @@ address p{
     address .address-details {
         gap: .5rem;
     }
+    address h1 {
+        font-size: 1.2rem;
+    }
+    address p {
+        font-size: .9rem;
+    }
+}
+@media (max-width: 380px) {
     address h1 {
         font-size: 1rem;
     }
@@ -1252,8 +1248,8 @@ main .account-container .orders-con{
         display: flex;
         align-items: center;
         border-radius: 2rem 2rem 0 0;
-        gap: 2rem;
-        padding: 0 2rem 7rem 2rem;
+        gap: 1rem;
+        padding: 0 1rem 6rem 1rem;
     }
     main .account-container{
         padding: 1rem;
