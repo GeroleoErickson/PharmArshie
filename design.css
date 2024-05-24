@@ -344,7 +344,7 @@ header .blur2{
     .sidebar .sideprofile img{
         border-radius: 50%;
         width: 100px;
-        border: .3rem solid var(--primary-color);
+        border: .2rem solid var(--primary-color);
         padding: .2rem;
     }
     .sidebar .sideprofile .name{
@@ -1438,7 +1438,6 @@ main .account-container .orders-con{
     .account-container .orders-con .purchase-history span, 
     .account-container .reminder-con .reminders span{
         padding: .4rem;
-        font-size: 1rem;
         border-radius: .8rem;
     }
     .edit {
