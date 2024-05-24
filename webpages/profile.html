@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../design.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>PharmArshie</title>
+</head>
+<body>
+    <!-- Navigation Bar-->
+    <header>
+        <nav>
+            <!-- Logo -->
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/logo-white.png" alt="">
+                    <h1>PharmArshie</h1>
+                </a>
+            </div>
+
+            <!-- Navigational links -->
+            <div class="nav-links">
+                <div class="controls">
+                    <a href="../index.html" class="">Home</a>
+                    <a href="">Products</a>
+                    <a href="">About Us</a>
+                    <a href="">Contacts</a>
+                </div>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </nav>
+    </header>
+
+    <div class="bottom-bar">
+        <div class="bottom-ctrls">
+            <a href="#"><span class="material-symbols-rounded active">home</span></a>
+            <a href="#"><span class="material-symbols-rounded">notifications</span></a>
+            <a href="#"><span class="material-symbols-rounded">shopping_cart</span></a>
+            <a href="#"><span class="material-symbols-rounded" onclick="showMenu()">menu</span></a>
+        </div>
+    </div>
+
+    <div class="sidebar" id="sidebar">
+        <span class="material-symbols-rounded back" onclick="hideMenu()">keyboard_return</span>
+        <a class="sideprofile">
+            <img src="../images/profile.jpg" alt="" width="80px">
+            <p class="name">Dave Geroleo</p>
+        </a>
+        <div class="sidelinks">
+            <a href="../index.html"><span class="material-symbols-rounded ">home</span><p class="">Home</p></a>
+            <a href="#"><span class="material-symbols-rounded ">shopping_cart</span><p>My Cart</p></a>
+            <a href="#"><span class="material-symbols-rounded ">volunteer_activism</span><p>Donations</p></a>
+            <a href="#"><span class="material-symbols-rounded ">settings</span><p>Setting</p></a>
+            <a href="#"><span class="material-symbols-rounded ">support_agent</span><p>Help & Support</p></a>
+            <a href="#"><span class="material-symbols-rounded ">help</span><p>About Us</p></a>
+            <a href="#"><span class="material-symbols-rounded ">call</span><p>Contacts</p></a>
+            <a href="#"><span class="material-symbols-rounded ">logout</span><p>Log-out</p></a>
+        </div>
+    </div>
+
+    
+    <!-- Main Content -->
+    <main class="profile-content">
+        <!-- User Head -->
+        <section class="user-profile">
+            <div class="user-profile-head">
+                <div class="greet">
+                    <div class="greetings">
+                        <h2>Hello, Dave</h2>
+                        <p>How's your Health?</p>
+                    </div>
+                    <div class="cart-settings">
+                        <a href="#"><span class="material-symbols-rounded ">shopping_cart</span></a>
+                        <a href="#"><span class="material-symbols-rounded ">settings</span></a>
+                        <a href="#"><span class="material-symbols-rounded ">edit</span></a>
+                    </div>
+                </div>
+    
+                <div class="account-profile">
+                    <div class="account">
+                        <img src="../images/profile.jpg" alt="" width="100px">
+                        <div class="account-details">
+                            <h3>Dave Geroloe</h3>
+                            <p>ericksongeroleo@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    <!-- End of User Head -->
+        <address class="address">
+            <div class="address-details">
+                <h1>Address</h1>
+                <div class="addresses">
+                    <p>+639197011930</p>
+                    <p>Boac, Marinduque</p>
+                    <p>Balimbing, Purok 6 St. Paye</p>
+                </div>
+            </div>
+        </address>
+
+        <div class="account-content">
+            <div class="account-container">
+                <!-- Medicine Reminders -->
+                <div class="reminder-con">
+                    <div class="reminders">
+                        <h1>My Reminders</h1>
+                        <div class="edit">
+                            <span class="material-symbols-rounded ">add</span>
+                            <span class="material-symbols-rounded ">edit</span>
+                        </div>
+                    </div>
+
+                    <div class="reminder-task ">
+                        <div class="time">
+                            <h1>8:30</h1>
+                            <h2>PM</h2>
+                        </div>
+
+                        <div class="reminder-details">
+                            <div class="full-details med1"> 
+                                <h2>Baladex</h2>
+                                <div class="med-details">
+                                    <div class="intake">
+                                        <span class="material-symbols-rounded">medication</span>
+                                        <div class="dosage-details">
+                                            <p>40 mg</p>
+                                            <p>daily dosage</p>
+                                        </div>
+                                    </div>
+                                    <div class="intake">
+                                        <span class="material-symbols-rounded">schedule</span>
+                                        <div class="dosage-details">
+                                            <p>2 x Tablet</p>
+                                            <p>per day</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="../images/tablets.png" alt="" width="150px">
+                        </div>
+                    </div>
+
+                    <div class="reminder-task">
+                        <div class="time">
+                            <h1>1:30</h1>
+                            <h2>PM</h2>
+                        </div>
+
+                        <div class="reminder-details med2">
+                            <div class="full-details">
+                                <h2>Lozartan</h2>
+                                <div class="med-details">
+                                    <div class="intake">
+                                        <span class="material-symbols-rounded">medication</span>
+                                        <div class="dosage-details">
+                                            <p>10 mg</p>
+                                            <p>daily dosage</p>
+                                        </div>
+                                    </div>
+                                    <div class="intake">
+                                        <span class="material-symbols-rounded">schedule</span>
+                                        <div class="dosage-details">
+                                            <p>2 x Tablet</p>
+                                            <p>per day</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="../images/tablets.png" alt="" width="150px">
+                        </div>
+                    </div>
+
+                    <div class="reminder-task">
+                        <div class="time">
+                            <h1>4:30</h1>
+                            <h2>PM</h2>
+                        </div>
+
+                        <div class="reminder-details med3">
+                            <div class="full-details">
+                                <h2>Hydrocone</h2>
+                                <div class="med-details">
+                                    <div class="intake">
+                                        <span class="material-symbols-rounded">medication</span>
+                                        <div class="dosage-details">
+                                            <p>40 mg</p>
+                                            <p>daily dosage</p>
+                                        </div>
+                                    </div>
+                                    <div class="intake">
+                                        <span class="material-symbols-rounded">schedule</span>
+                                        <div class="dosage-details">
+                                            <p>2 x Tablet</p>
+                                            <p>per day</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="../images/tablets.png" alt="" width="150px">
+                        </div>
+                    </div>
+                </div>
+                <!--End of Medicine Reminders -->
+            </div>
+            <div class="account-container">
+                <div class="orders-con">
+                    <div class="purchase-history">
+                        <h1>Purchase History</h1>
+                        <div class="edit">
+                            <span class="material-symbols-rounded ">add</span>
+                            <span class="material-symbols-rounded ">edit</span>
+                        </div>
+                    </div>
+                    <div class="order-categories">
+                        <p class="active">To pay</p>
+                        <p>To Received</p>
+                        <p>Completed</p>
+                        <p>Refund</p>
+                    </div>
+                    <div class="ordered-items">
+                        <div class="ordered-meds">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- End of Main Content -->
+    <script src="../script.js"></script>
+</body>
+</html>
