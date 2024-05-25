@@ -588,6 +588,9 @@ main .product-container .med-con:hover{
     main .product-container{
         grid-template-columns: repeat(3, 1fr);
     }
+    main .banner{
+        padding: 0 1rem 1rem;
+    }
 }
 @media (max-width: 480px){
     main{
