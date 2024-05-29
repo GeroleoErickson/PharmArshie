@@ -7,6 +7,12 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>PharmArshie</title>
+
+    <script>
+        if (localStorage.getItem('dark-mode') === 'enabled') {
+            document.documentElement.classList.add('dark-theme');
+        }
+    </script>
 </head>
 <body class="notification-body">
     <!-- Navigation Bar-->
@@ -27,7 +33,7 @@
                     <a href="">About Us</a>
                     <a href="">Contacts</a>
                 </div>
-                <label class="switch">
+                <label class="switch theme-toggler" id="toggleDark">
                     <input type="checkbox">
                     <span class="slider"></span>
                 </label>
@@ -39,7 +45,7 @@
         <div class="bottom-ctrls">
             <a href="../index.html"><span class="material-symbols-rounded">home</span></a>
             <a href="#"><span class="material-symbols-rounded active">notifications</span></a>
-            <a href="#"><span class="material-symbols-rounded">shopping_cart</span></a>
+            <a href="cart.html"><span class="material-symbols-rounded">shopping_cart</span></a>
             <a href="#"><span class="material-symbols-rounded" onclick="showMenu()">menu</span></a>
         </div>
     </div>
@@ -52,7 +58,7 @@
         </a>
         <div class="sidelinks">
             <a href="../index.html"><span class="material-symbols-rounded ">home</span><p class="">Home</p></a>
-            <a href="#"><span class="material-symbols-rounded ">shopping_cart</span><p>My Cart</p></a>
+            <a href="cart.html"><span class="material-symbols-rounded ">shopping_cart</span><p>My Cart</p></a>
             <a href="#"><span class="material-symbols-rounded ">volunteer_activism</span><p>Donations</p></a>
             <a href="#"><span class="material-symbols-rounded ">settings</span><p>Setting</p></a>
             <a href="#"><span class="material-symbols-rounded ">support_agent</span><p>Help & Support</p></a>
@@ -69,112 +75,93 @@
         <button id="fltr"><span class="material-symbols-rounded">page_info</span></button>
     </div>
 
-    <main class="notification-content">
+    <main class="notification-content page-content">
         <div class="notif-container">
             <div class="notif">
                 <img src="../images/Medicine.jpg" alt="" width="110px">
                 <div class="notif-details">
-                    <h3 id="coop-name">Order Update!</h3>
+                    <h3>Order Update!</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <p id="time">1 hour ago</p>
                 </div>
                 <button type="button" id="close"><span class="material-symbols-rounded">close</span></button>
             </div>
-
             <div class="notif">
                 <img src="../images/Medicine.jpg" alt="" width="110px">
                 <div class="notif-details">
-                    <h3 id="coop-name">Order Update!</h3>
+                    <h3>Order Update!</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <p id="time">1 hour ago</p>
                 </div>
                 <button type="button" id="close"><span class="material-symbols-rounded">close</span></button>
             </div>
-
             <div class="notif">
                 <img src="../images/Medicine.jpg" alt="" width="110px">
                 <div class="notif-details">
-                    <h3 id="coop-name">Order Update!</h3>
+                    <h3>Order Update!</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <p id="time">1 hour ago</p>
                 </div>
                 <button type="button" id="close"><span class="material-symbols-rounded">close</span></button>
             </div>
-
             <div class="notif">
                 <img src="../images/Medicine.jpg" alt="" width="110px">
                 <div class="notif-details">
-                    <h3 id="coop-name">Order Update!</h3>
+                    <h3>Order Update!</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <p id="time">1 hour ago</p>
                 </div>
                 <button type="button" id="close"><span class="material-symbols-rounded">close</span></button>
             </div>
-
             <div class="notif">
                 <img src="../images/Medicine.jpg" alt="" width="110px">
                 <div class="notif-details">
-                    <h3 id="coop-name">Order Update!</h3>
+                    <h3>Order Update!</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <p id="time">1 hour ago</p>
                 </div>
                 <button type="button" id="close"><span class="material-symbols-rounded">close</span></button>
             </div>
-
             <div class="notif">
                 <img src="../images/Medicine.jpg" alt="" width="110px">
                 <div class="notif-details">
-                    <h3 id="coop-name">Order Update!</h3>
+                    <h3>Order Update!</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <p id="time">1 hour ago</p>
                 </div>
                 <button type="button" id="close"><span class="material-symbols-rounded">close</span></button>
             </div>
-
             <div class="notif">
                 <img src="../images/Medicine.jpg" alt="" width="110px">
                 <div class="notif-details">
-                    <h3 id="coop-name">Order Update!</h3>
+                    <h3>Order Update!</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <p id="time">1 hour ago</p>
                 </div>
                 <button type="button" id="close"><span class="material-symbols-rounded">close</span></button>
             </div>
-
             <div class="notif">
                 <img src="../images/Medicine.jpg" alt="" width="110px">
                 <div class="notif-details">
-                    <h3 id="coop-name">Order Update!</h3>
+                    <h3>Order Update!</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <p id="time">1 hour ago</p>
                 </div>
                 <button type="button" id="close"><span class="material-symbols-rounded">close</span></button>
             </div>
-
             <div class="notif">
                 <img src="../images/Medicine.jpg" alt="" width="110px">
                 <div class="notif-details">
-                    <h3 id="coop-name">Order Update!</h3>
+                    <h3>Order Update!</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <p id="time">1 hour ago</p>
                 </div>
                 <button type="button" id="close"><span class="material-symbols-rounded">close</span></button>
             </div>
-
             <div class="notif">
                 <img src="../images/Medicine.jpg" alt="" width="110px">
                 <div class="notif-details">
-                    <h3 id="coop-name">Order Update!</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <p id="time">1 hour ago</p>
-                </div>
-                <button type="button" id="close"><span class="material-symbols-rounded">close</span></button>
-            </div>
-
-            <div class="notif">
-                <img src="../images/Medicine.jpg" alt="" width="110px">
-                <div class="notif-details">
-                    <h3 id="coop-name">Order Update!</h3>
+                    <h3>Order Update!</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <p id="time">1 hour ago</p>
                 </div>
