@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../design.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+    <title>PharmArshie</title>
+
+    <script>
+        if (localStorage.getItem('dark-mode') === 'enabled') {
+            document.documentElement.classList.add('dark-theme');
+        }
+    </script>
+</head>
+<body class="notification-body">
+    <!-- Navigation Bar-->
+    <header class="notification-header">
+        <nav>
+            <!-- Logo -->
+            <div class="logo">
+                <a href="../index.html">
+                    <h1>Med Details</h1>
+                </a>
+            </div>
+
+            <!-- Navigational links -->
+            <div class="nav-links">
+                <div class="controls">
+                    <a href="../index.html" class="">Home</a>
+                    <a href="" class="active">Products</a>
+                    <a href="">About Us</a>
+                    <a href="">Contacts</a>
+                </div>
+                <label class="switch theme-toggler" id="toggleDark">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </nav>
+    </header>
+
+    <div class="bottom-bar">
+        <div class="bottom-ctrls">
+            <a href="../index.html"><span class="material-symbols-rounded">home</span></a>
+            <a href="notifications.html"><span class="material-symbols-rounded">notifications</span></a>
+            <a href="#"><span class="material-symbols-rounded">shopping_cart</span></a>
+            <a href="#"><span class="material-symbols-rounded" onclick="showMenu()">menu</span></a>
+        </div>
+    </div>
+
+    <div class="sidebar" id="sidebar">
+        <span class="material-symbols-rounded back" onclick="hideMenu()">keyboard_return</span>
+        <a href="profile.html" class="sideprofile">
+            <img src="../images/profile.jpg" alt="" width="80px">
+            <p class="name">Dave Geroleo</p>
+        </a>
+        <div class="sidelinks">
+            <a href="../index.html"><span class="material-symbols-rounded ">home</span><p class="">Home</p></a>
+            <a href="#"><span class="material-symbols-rounded active">shopping_cart</span><p class="active">My Cart</p></a>
+            <a href="#"><span class="material-symbols-rounded ">volunteer_activism</span><p>Donations</p></a>
+            <a href="#"><span class="material-symbols-rounded ">settings</span><p>Setting</p></a>
+            <a href="#"><span class="material-symbols-rounded ">support_agent</span><p>Help & Support</p></a>
+            <a href="#"><span class="material-symbols-rounded ">help</span><p>About Us</p></a>
+            <a href="#"><span class="material-symbols-rounded ">call</span><p>Contacts</p></a>
+            <a href="#"><span class="material-symbols-rounded ">logout</span><p>Log-out</p></a>
+        </div>
+    </div>
+
+    
+    <!-- Main Content -->
+   
+    <main class="product-details-content">
+        <div class="product-scrollbar">
+            
+            <img src="../images/Medicine.jpg" width="400px">
+            
+            <div class="product-share">
+                <div class="product-name">
+                    <h1>Omeprazole</h1>
+                    <h3>40mg per Capsule</h3>
+                </div>
+                <div class="like-share">
+                    <!-- heart -->
+                    <label class="heart">
+                        <input checked="checked" type="checkbox">
+                        <div class="checkmark">
+                            <svg viewBox="0 0 256 256">
+                            <rect fill="none" height="256" width="256"></rect>
+                            <path d="M224.6,51.9a59.5,59.5,0,0,0-43-19.9,60.5,60.5,0,0,0-44,17.6L128,59.1l-7.5-7.4C97.2,28.3,59.2,26.3,35.9,47.4a59.9,59.9,0,0,0-2.3,87l83.1,83.1a15.9,15.9,0,0,0,22.6,0l81-81C243.7,113.2,245.6,75.2,224.6,51.9Z" stroke-width="20px" stroke="#FFF" fill="none"></path></svg>
+                        </div>
+                    </label>
+                    <span class="material-symbols-rounded">share</span>
+                </div>
+            </div>
+
+            <div class="price-quanti">
+                <div class="price-sold">
+                    <h2>Php 30.00</h2>
+                    <p>278 sold</p>
+                    <P>200 stocks</P>
+                </div>
+
+                <div class="quantity">
+                    <span class="material-symbols-rounded decrement">remove</span>
+                    <p class="quanti">0</p>
+                    <span class="material-symbols-rounded increment">add</span>
+                </div>
+            </div>
+            <div class="product-description">
+                <h3>Medecine Description</h3> 
+                <div class="product-full-details">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Omnis placeat, totam illum ipsam, illo ea laboriosam aut 
+                        nihil pariatur esse inventore consectetur veniam. Minus 
+                        vero minima officiis iste quibusdam earum.
+                    </p>
+
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Omnis placeat, totam illum ipsam, illo ea laboriosam aut 
+                        nihil pariatur esse inventore consectetur veniam. Minus 
+                        vero minima officiis iste quibusdam earum.
+                    </p>
+
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Omnis placeat, totam illum ipsam, illo ea laboriosam aut 
+                        nihil pariatur esse inventore consectetur veniam. Minus 
+                        vero minima officiis iste quibusdam earum.
+                    </p>
+
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Omnis placeat, totam illum ipsam, illo ea laboriosam aut 
+                        nihil pariatur esse inventore consectetur veniam. Minus 
+                        vero minima officiis iste quibusdam earum.
+                    </p>
+
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Omnis placeat, totam illum ipsam, illo ea laboriosam aut 
+                        nihil pariatur esse inventore consectetur veniam. Minus 
+                        vero minima officiis iste quibusdam earum.
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="product-details-con">
+            <div class="variations">
+                <h2>variations</h2>
+                <div class="var-pics">
+                    <img src="../images/Medicine.jpg" alt="" width="80px">
+                    <img src="../images/Medicine.jpg" alt="" width="80px">
+                    <img src="../images/Medicine.jpg" alt="" width="80px">
+                </div>
+            </div>
+            <div class="vouchers">
+                <h2>Shop Vouchers</h2>
+                <p>50% Off</p>
+            </div>
+            <div class="total-order">
+                <div class="total">
+                    <h2>Total</h2>
+                    <p>Php 00.00</p>
+                </div>
+                <div class="buy-cart">
+                    <span class="material-symbols-rounded">add_shopping_cart</span>
+                    <button>Buy now</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- End of Main Content -->
+    <script src="../script.js"></script>
+</body>
+</html>
