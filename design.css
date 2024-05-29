@@ -1829,6 +1829,7 @@ main .account-container .orders-con{
     font-size: 1.2rem;
     border-radius: 1.2rem;
     color: #f5f5f5;
+    font-weight: 600;
     background-color: var(--secondary-color);
     cursor: pointer;
 }
