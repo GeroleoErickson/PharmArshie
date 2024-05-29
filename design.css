@@ -92,7 +92,7 @@ header nav{
 header nav .logo, .logo a{
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: .5rem;
     z-index: 1;
 }
 header nav .logo img{
@@ -462,6 +462,19 @@ main .banner img{
 }
 /* End Of banner */
 
+@media (max-width: 480px) {
+    main .banner{
+        width: 100%;
+        height: auto;
+        padding: 0 1rem 1rem 1rem;
+        border-radius: 1.5rem;
+    }
+    main .banner img{
+        width: 100%;
+        height: auto;
+        border-radius: 1.5rem;
+    }
+}
 
 /* Main */
 main{
@@ -535,7 +548,7 @@ main .product-container .med-con .ratings{
     display: flex;
     align-items: center;
     justify-content: center;
-    backdrop-filter: blur(60px);
+    background-color: rgba(255, 255, 255, 0.511);
 }
 main .product-container .med-con .ratings h2{
     color: #363959;
@@ -620,6 +633,7 @@ main .product-container .med-con:hover{
     main{
         padding-bottom: 0;
     }
+    
     main .product-container{
         grid-template-columns: repeat(2, 1fr);
     }
@@ -709,7 +723,7 @@ main .product-container .med-con:hover{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(255, 255, 255, 0.086);
+    background-color: rgba(132, 139, 200, 0.18);
     transition: .4s;
     border-radius: 30px;
   }
@@ -1798,7 +1812,9 @@ main .account-container .orders-con{
     height: fit-content;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
+
 .checkout-container .price-fee .fees h3,
 .checkout-container .subtotal-checkout .subtotal h2{
     font-weight: 600;
@@ -1944,7 +1960,10 @@ main .account-container .orders-con{
     .checkout-container :where(.price-fee, .subtotal-checkout) {
         gap: .5rem;
     }
-    .checkout-container .price-fee .fees h3, .checkout-container .subtotal-checkout .subtotal h2 {
+    .checkout-container .price-fee .fees h3{
+        font-size: 0.9rem
+    }
+    .checkout-container .subtotal-checkout .subtotal h2 {
         font-size: 1rem;
     }
     .checkout-container .price-fee .fees p{
@@ -1984,7 +2003,9 @@ main .account-container .orders-con{
         padding: 0.1rem;
     }
     
-    
+    .checkout-container .price-fee .fees h3{
+        font-size: .8rem;
+    }
 }
 
 
