@@ -28,7 +28,7 @@
     --color-white: white;
     --color-dark: #2f2f2f;
     --color-light: rgba(132, 139, 200, 0.18);
-    --color-dark-variant: #677483;
+    --color-dark-variant: #5f7878;
     --text-info-color: #6b6b6b;
     
 }
@@ -64,6 +64,7 @@ body{
 
 header .nav-links .controls .active{
     color: var(--primary-color);
+    font-weight: 600;
 }
 
 .bottom-bar .active, 
@@ -96,7 +97,7 @@ header nav{
 header nav .logo{
     display: flex;
     align-items: center;
-    gap: .5rem;
+    gap: .2rem;
     z-index: 1;
 }
 header nav .logo img{
@@ -108,6 +109,9 @@ header nav .logo span{
 header nav .logo h1{
     color: white;
     font-weight: 600;
+}
+header nav .logo .webpagesH1{
+    color: var(--color-dark);
 }
 nav .nav-links{
     display: flex;
@@ -802,15 +806,13 @@ main .product-container .med-con:hover{
     background-color: var(--background-color-light);
 }
 .profile-header nav .nav-links .controls a{
-    color: var(--font-color);
+    color: var(--color-dark);
 }
 .user-profile{
     width: 100%;
     padding: 0 2rem 2rem 2rem;
 }
-.profile-header .profile-h1{
-    color: var(--font-color);
-}
+
 /* Profile HTML */
 .user-profile-head{
     width: 100%;
@@ -1134,6 +1136,7 @@ main .account-container .reminder-con{
 .reminder-con .reminder-task .time h2{
     font-size: 1.1rem;
     font-weight: 500;
+    color: var(--text-info-color);
 }
 
 .reminder-con .reminder-task .reminder-details{
