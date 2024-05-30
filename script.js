@@ -9,6 +9,20 @@ var navLinks = document.getElementById("sidebar")
     }
 
 
+document.addEventListener('DOMContentLoaded', () => {
+    const banner = document.querySelector('.banner');
+    const images = banner.querySelectorAll('img');
+    const totalImages = images.length;
+    let index = 0;
+
+    setInterval(() => {
+        index = (index + 1) % totalImages;
+        banner.scrollTo({
+            left: banner.clientWidth * index,
+            behavior: 'smooth'
+        });
+    }, 5000); // Change image every 5 seconds
+});
 
 
 document.addEventListener('DOMContentLoaded', function() {
