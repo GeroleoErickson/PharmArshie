@@ -479,7 +479,9 @@ main .banner img{
     border-radius: 2rem;
     flex-grow: 1;
 }
-
+main .banner-wrapper .banner::-webkit-scrollbar{
+    display: none;
+}
 /* End Of banner */
 
 @media (max-width: 780px) {
