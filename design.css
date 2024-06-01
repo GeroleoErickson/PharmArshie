@@ -694,19 +694,19 @@ main .product-container .med-con:hover{
         padding: .3rem .8rem .8rem;
     }
     main .products-categories .product-container .med-con .price h3{
-        font-size: var(--bodyfont);
+        font-size: 1rem;
     }
     main .product-container .med-con .ratings h2 {
-        font-size: var(--bodyfont);
+        font-size: 1rem;
     }
     main .product-container .med-con .ratings .material-symbols-rounded{
         font-size: 1rem;
     }
     main .products-categories .product-container .med-con .product-details h2 {
-        font-size: var(--bodyfont);
+        font-size: 1rem;
     }
     main .products-categories .product-container .med-con .product-details p{
-        font-size: .6rem;
+        font-size: var(--bodyfont);
     }
     main .products-categories .product-container .med-con .price span {
         aspect-ratio: 1 / 1;
@@ -2309,7 +2309,7 @@ main .account-container .orders-con{
 
 .checkmark svg path {
     stroke: var(--color-dark); 
-    stroke-width: 20px; 
+    stroke-width: 1.1rem; 
 }
 
 .heart input:checked ~ .checkmark path {
@@ -2468,5 +2468,8 @@ main .account-container .orders-con{
         font-size: 1.5rem;
         background-color: var(--color-light);
         padding: .9rem;
+    }
+    .product-details-content .product-scrollbar .like-share{
+        gap: .5rem;
     }
 }
