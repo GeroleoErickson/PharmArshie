@@ -185,6 +185,7 @@ header .profile .prof p{
 header .profile img{
     border-radius: 1rem;
     transition: var(--transition);
+    width: 2.8rem;
 }
 header .profile img:hover{
     scale: 1.1;
@@ -351,7 +352,7 @@ header .blur2{
         flex-direction: column;
         width: 230px;
         height: 100%;
-        background-color: #181d1ee0;
+        background-color: rgba(24, 29, 30, 0.8);
         backdrop-filter: blur(60px);
         border-radius: 2rem 0 0 2rem;
         z-index: 9999;
@@ -497,7 +498,6 @@ main .banner-wrapper .banner::-webkit-scrollbar{
         gap: 1rem;
         width: 100%;
         height: auto;
-        border-radius: 1.5rem;
         overflow-x: scroll;
         scroll-snap-type: x mandatory;
         scroll-behavior: smooth;
@@ -549,6 +549,7 @@ main .products-categories{
 }
 .products-categories .categories a{
     font-size: 1rem;
+    min-width: fit-content;
 }
 .products-categories .categories .active{
     background-color: var(--primary-color);
@@ -721,80 +722,68 @@ main .product-container .med-con:hover{
     
 }
 
-@media (min-width: 380px){
-    
-}
 
 
-
-
-
-/* The switch - the box around the slider */
+/* Darkmode button */
 .switch {
     display: block;
-    --width-of-switch: 3.5em;
-    --height-of-switch: 2em;
-    /* size of sliding icon -- sun and moon */
-    --size-of-icon: 1.4em;
-    /* it is like a inline-padding of switch */
-    --slider-offset: 0.3em;
+    --width-of-switch: 3.5rem;
+    --height-of-switch: 2rem;
+    --size-of-icon: 1.4rem;
+    --slider-offset: 0.3rem;
     position: relative;
     width: var(--width-of-switch);
     height: var(--height-of-switch);
-  }
-  
-  /* Hide default HTML checkbox */
-  .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-  
-  /* The slider */
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(132, 139, 200, 0.18);
-    transition: .4s;
-    border-radius: 30px;
-  }
-  
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: var(--size-of-icon,1.4em);
-    width: var(--size-of-icon,1.4em);
-    border-radius: 20px;
-    left: var(--slider-offset,0.3em);
-    top: 50%;
-    transform: translateY(-50%);
-    background: linear-gradient(40deg,#ff0080,#ff8c00 70%);
-    ;
-   transition: .4s;
-  }
-  
-  input:checked + .slider {
-    background-color: #1d2424;
-  }
-  
-  input:checked + .slider:before {
-    left: calc(100% - (var(--size-of-icon,1.4em) + var(--slider-offset,0.3em)));
-    background: #1d2424;
-    /* change the value of second inset in box-shadow to change the angle and direction of the moon  */
-    box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
-  }
+}
 
-  main::-webkit-scrollbar{
-    display: none;
-  }
+.switch input {
+opacity: 0;
+width: 0;
+height: 0;
+}
 
-  .products-categories .categories::-webkit-scrollbar{
-    display: none;
-  }
+.slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: rgba(132, 139, 200, 0.18);
+transition: .4s;
+border-radius: 30px;
+}
+
+.slider:before {
+position: absolute;
+content: "";
+height: var(--size-of-icon,1.4rem);
+width: var(--size-of-icon,1.4rem);
+border-radius: 20px;
+left: var(--slider-offset,0.3rem);
+top: 50%;
+transform: translateY(-50%);
+background: linear-gradient(40deg,#ff0080,#ff8c00 70%);
+transition: .4s;
+}
+
+input:checked + .slider {
+background-color: #1d2424;
+}
+
+input:checked + .slider:before {
+left: calc(100% - (var(--size-of-icon,1.4rem) + var(--slider-offset,0.3rem)));
+background: #1d2424;
+box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
+}
+
+main::-webkit-scrollbar{
+display: none;
+}
+
+.products-categories .categories::-webkit-scrollbar{
+display: none;
+}
 
 
 
@@ -1852,7 +1841,7 @@ main .account-container .orders-con{
 
 .checkout-container .price-fee .fees h3,
 .checkout-container .subtotal-checkout .subtotal h2{
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .checkout-container .price-fee .fees p{
@@ -2101,7 +2090,7 @@ main .account-container .orders-con{
 .product-details-content .product-scrollbar img{
     position: relative;
     width: 100%;
-    aspect-ratio: 21/9;
+    aspect-ratio: 21/12;
     object-fit: cover;
     border-radius: 2rem 2rem 50% 50% / 2rem 2rem 6rem 6rem;
 }
@@ -2257,7 +2246,7 @@ main .account-container .orders-con{
 }
 .product-details-content .product-details-con .total-order .total p{
     font-size: 1.3rem;
-    font-weight: 600;
+    font-weight: 500;
     color: var(--primary-color);
 }
 
@@ -2291,74 +2280,74 @@ main .account-container .orders-con{
 
  /* Heart */
 
- .heart input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-  }
-  
-  .heart {
-    display: block;
-    position: relative;
-    cursor: pointer;
-    font-size: 20px;
-    user-select: none;
-    transition: 100ms;
-  }
-  
-  .checkmark {
-    top: 0;
-    left: 0;
-    height: 2rem;
-    width: 2rem;
-    transition: 100ms;
-    animation: dislike_effect 400ms ease;
-    background: none;
-  }
-  
-  .heart input:checked ~ .checkmark path {
-    fill: #FF5353;
-    stroke-width: 0;
-  }
-  
-  .heart input:checked ~ .checkmark {
-    animation: like_effect 400ms ease;
-    background: none;
-  }
-  
-  .heart:hover {
-    transform: scale(1.1);
-  }
-  
-  @keyframes like_effect {
-    0% {
-      transform: scale(0);
-    }
-  
-    50% {
-      transform: scale(1.2);
-    }
-  
-    100% {
-      transform: scale(1);
-    }
-  }
-  
-  @keyframes dislike_effect {
-    0% {
-      transform: scale(0);
-    }
-  
-    50% {
-      transform: scale(1.2);
-    }
-  
-    100% {
-      transform: scale(1);
-    }
-  }
+.heart input {
+position: absolute;
+opacity: 0;
+cursor: pointer;
+height: 0;
+width: 0;
+}
+
+.heart {
+display: block;
+position: relative;
+cursor: pointer;
+font-size: 20px;
+user-select: none;
+transition: 100ms;
+}
+
+.checkmark {
+top: 0;
+left: 0;
+height: 2rem;
+width: 2rem;
+transition: 100ms;
+animation: dislike_effect 400ms ease;
+background: none;
+}
+
+.heart input:checked ~ .checkmark path {
+fill: #FF5353;
+stroke-width: 0;
+}
+
+.heart input:checked ~ .checkmark {
+animation: like_effect 400ms ease;
+background: none;
+}
+
+.heart:hover {
+transform: scale(1.1);
+}
+
+@keyframes like_effect {
+0% {
+    transform: scale(0);
+}
+
+50% {
+    transform: scale(1.2);
+}
+
+100% {
+    transform: scale(1);
+}
+}
+
+@keyframes dislike_effect {
+0% {
+    transform: scale(0);
+}
+
+50% {
+    transform: scale(1.2);
+}
+
+100% {
+    transform: scale(1);
+}
+}
 
 
 .product-details-content .product-scrollbar::-webkit-scrollbar{
@@ -2475,4 +2464,3 @@ main .account-container .orders-con{
         padding: .9rem;
     }
 }
-

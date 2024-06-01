@@ -1,5 +1,5 @@
 
-
+// Side Bar
 var navLinks = document.getElementById("sidebar")
     function showMenu(){
         sidebar.style.right = "-0.1rem"
@@ -8,7 +8,7 @@ var navLinks = document.getElementById("sidebar")
         sidebar.style.right = "-17rem"
     }
 
-
+// Banner Scrollsnap
 document.addEventListener('DOMContentLoaded', () => {
     const banner = document.querySelector('.banner');
     const images = banner.querySelectorAll('img');
@@ -21,10 +21,11 @@ document.addEventListener('DOMContentLoaded', () => {
             left: banner.clientWidth * index,
             behavior: 'smooth'
         });
-    }, 5000); // Change image every 5 seconds
+    }, 5000); 
 });
 
 
+// Darkode
 document.addEventListener('DOMContentLoaded', function() {
     const toggleSwitch = document.getElementById('toggleDark').querySelector('input');
 
@@ -45,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-
+// Product Quantity
 document.addEventListener('DOMContentLoaded', function() {
     const quantities = document.querySelectorAll('.quantity');
 
