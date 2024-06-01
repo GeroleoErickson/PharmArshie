@@ -25,24 +25,32 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-// Darkode
-document.addEventListener('DOMContentLoaded', function() {
-    const toggleSwitch = document.getElementById('toggleDark').querySelector('input');
+// 
 
-    if (localStorage.getItem('dark-mode') === 'enabled') {
-        document.body.classList.add('dark-theme');
+document.addEventListener('DOMContentLoaded', function() {
+    const toggleSwitch = document.querySelector('#toggleDark input');
+
+    // Retrieve dark mode preference from localStorage
+    const darkModeEnabled = localStorage.getItem('dark-mode') === 'enabled';
+
+    // Apply dark theme class to body if dark mode is enabled
+    if (darkModeEnabled) {
+        document.documentElement.classList.add('dark-theme');
         toggleSwitch.checked = true;
     }
+
+    // Add event listener for theme toggle
     toggleSwitch.addEventListener('change', function() {
         if (toggleSwitch.checked) {
-            document.body.classList.add('dark-theme');
+            document.documentElement.classList.add('dark-theme');
             localStorage.setItem('dark-mode', 'enabled');
         } else {
-            document.body.classList.remove('dark-theme');
+            document.documentElement.classList.remove('dark-theme');
             localStorage.removeItem('dark-mode');
         }
     });
 });
+
 
 
 

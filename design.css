@@ -2281,79 +2281,85 @@ main .account-container .orders-con{
  /* Heart */
 
 .heart input {
-position: absolute;
-opacity: 0;
-cursor: pointer;
-height: 0;
-width: 0;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
 }
 
 .heart {
-display: block;
-position: relative;
-cursor: pointer;
-font-size: 20px;
-user-select: none;
-transition: 100ms;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+    transition: 100ms;
 }
 
 .checkmark {
-top: 0;
-left: 0;
-height: 2rem;
-width: 2rem;
-transition: 100ms;
-animation: dislike_effect 400ms ease;
-background: none;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    width: 2rem;
+    transition: 100ms;
+    animation: dislike_effect 400ms ease;
+    background: none;
+}
+
+.checkmark svg path {
+    stroke: var(--color-dark); 
+    stroke-width: 20px; 
 }
 
 .heart input:checked ~ .checkmark path {
-fill: #FF5353;
-stroke-width: 0;
+    fill: #FF5353;
+    stroke-width: 0;
+}
+
+.heart input:not(:checked) ~ .checkmark svg path {
+    stroke: var(--color-dark); 
 }
 
 .heart input:checked ~ .checkmark {
-animation: like_effect 400ms ease;
-background: none;
+    animation: like_effect 400ms ease;
 }
 
 .heart:hover {
-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 @keyframes like_effect {
-0% {
-    transform: scale(0);
-}
-
-50% {
-    transform: scale(1.2);
-}
-
-100% {
-    transform: scale(1);
-}
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 @keyframes dislike_effect {
-0% {
-    transform: scale(0);
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
-50% {
-    transform: scale(1.2);
-}
 
-100% {
-    transform: scale(1);
-}
-}
+
 
 
 .product-details-content .product-scrollbar::-webkit-scrollbar{
     display: none;
 }
-  /* End Of Heart */
 
 @media (max-width:1200px){
     .product-details-content .product-scrollbar img{
