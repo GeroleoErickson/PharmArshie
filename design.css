@@ -270,7 +270,7 @@ body{
     }
     .loading-logo .loading-logo-name > p{
         font-size: 1.5rem;
-        letter-spacing: .8rem;
+        letter-spacing: .1rem;
         line-height: .8rem;
     }
     

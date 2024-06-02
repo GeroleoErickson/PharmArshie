@@ -2,23 +2,22 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     const loadingScreen = document.querySelector('.loading-screen');
-    const mainContent = document.querySelector('main'); // Make sure 'main' is the correct selector for your main content
+    const mainContent = document.querySelector('main'); 
 
     window.onload = function() {
-        // Simulate loading completion for demonstration purposes
-        const loadingDuration = 2000; // Duration to simulate loading
-        const transitionDuration = 500; // CSS transition duration in milliseconds
+        
+        const loadingDuration = 2000; 
+        const transitionDuration = 500; 
 
         setTimeout(function() {
-            // Add class to initiate transition (defined in CSS)
+        
             loadingScreen.classList.add('move-up');
             mainContent.classList.add('move-up');
-
-            // Wait for the transition to complete before removing the loading screen
+            
             setTimeout(function() {
-                loadingScreen.style.display = 'none'; // Hide the loading screen
-            }, transitionDuration); // Adjust time to match the CSS transition duration
-        }, loadingDuration); // Adjust time to simulate loading duration
+                loadingScreen.style.display = 'none'; 
+            }, transitionDuration); 
+        }, loadingDuration); 
     };
 });
 
