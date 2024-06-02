@@ -577,7 +577,7 @@ header .blur2{
         border-radius: 2rem 0 0 2rem;
         z-index: 9999;
         padding: 2rem;
-        gap: 4rem;
+        gap: 5rem;
         transition: var(--transition);
     }
     .sidebar .back{
@@ -665,14 +665,14 @@ header .blur2{
         display: none;
     }
     .sidebar{
-        gap: 2rem;
+        gap: 4rem;
         width: 200px;
     }
     .sidebar .sidelinks :where(p){
         font-size: 0.7rem;
     }
     .sidebar .sidelinks a{
-        padding: .6rem;
+        padding: 1rem .6rem;
     }
 }
 
@@ -2440,6 +2440,8 @@ main .account-container .orders-con{
 }
 .product-details-content .product-details-con div > span{
     font-size: 2rem;
+}
+.product-details-content .product-details-con div > .active{
     color: var(--primary-color);
 }
 .product-details-content .product-details-con div .var-pics{
