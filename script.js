@@ -25,10 +25,18 @@ document.addEventListener("DOMContentLoaded", function() {
 // Side Bar
 var navLinks = document.getElementById("sidebar")
     function showMenu(){
-        sidebar.style.right = "-0.1rem"
+        sidebar.style.right = "0"
+        document.addEventListener('click', handleClickOutside, true);
     }
     function hideMenu(){
         sidebar.style.right = "-17rem"
+        document.addEventListener('click', handleClickOutside, true);
+    }
+    
+    function handleClickOutside(event) {
+        if (!sidebar.contains(event.target) && event.target.tagName !== "BUTTON" && !event.target.classList.contains('material-symbols-rounded')) {
+            hideMenu();
+        }
     }
 
 // Banner Scrollsnap
