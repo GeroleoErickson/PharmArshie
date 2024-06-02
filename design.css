@@ -63,7 +63,7 @@ body{
 
 /* Loding Screen */
 
-.loading-screen{
+.loading-screen {
     position: fixed;
     top: 0;
     left: 0;
@@ -76,60 +76,50 @@ body{
     justify-content: space-around;
     transition: transform .5s ease;
     z-index: 9999999; 
+    opacity: 1; /* Ensure the loading screen is initially visible */
 }
-.loading-logo{
+
+.loading-logo {
     width: fit-content;
     display: flex;
     gap: 2rem;
     align-items: center;
-    transition: none;
+    opacity: 0; /* Initially hide the logo */
 }
-.loading-logo .loading-logo-name{
+
+.loading-logo .loading-logo-name {
     width: fit-content;
     height: fit-content;
 }
-.loading-logo .loading-logo-name > h1{
+
+.loading-logo .loading-logo-name > h1 {
     font-size: 4rem;
     text-align: center;
     color: white;
-    transition: none;
 }
-.loading-logo .loading-logo-name > p{
+
+.loading-logo .loading-logo-name > p {
     font-size: 2rem;
     text-align: center;
     color: white;
     letter-spacing: .4rem;
     line-height: 1rem;
-    transition: none;
-}
-.move-up.loading-screen {
-    transform: translateY(-100%);
 }
 
+
 .loading-logo {
-    opacity: 0;
-    transform: translateY(50px);
     animation: fadeInUp .5s ease-in-out forwards;
 }
 
 @keyframes fadeInUp {
-    0% {
+    from {
         opacity: 0;
         transform: translateY(50px);
     }
-    100% {
+    to {
         opacity: 1;
         transform: translateY(0);
     }
-}
-
-.move-up.loading-screen {
-    transform: translateY(-100%); /* Move the loading screen up out of view */
-}
-
-.move-up.main-content {
-    transform: translateY(0); /* Move the main content up into view */
-    opacity: 1; /* Make the main content visible */
 }
 
 
