@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-// 
+//Dark Mode 
 
 document.addEventListener('DOMContentLoaded', function() {
     const toggleSwitch = document.querySelector('#toggleDark input');
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
             localStorage.setItem('dark-mode', 'enabled');
         } else {
             document.documentElement.classList.remove('dark-theme');
-            localStorage.removeItem('dark-mode');
+            localStorage.setItem('dark-mode', 'disabled');
         }
     });
 });
