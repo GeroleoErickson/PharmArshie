@@ -1,15 +1,24 @@
-// loading page
 document.addEventListener("DOMContentLoaded", function() {
     // Select the loading screen element
     const loadingScreen = document.querySelector(".loading-screen");
 
-    // Function to move the loading screen up
-    function moveLoadingScreenUp() {
-        loadingScreen.style.transform = "translateY(-100%)";
-    }
+    // Check if the loading screen has already been shown
+    const loadingScreenShown = sessionStorage.getItem("loadingScreenShown");
 
-    // Move the loading screen up after 5 seconds
-    setTimeout(moveLoadingScreenUp, 5000);
+    if (!loadingScreenShown) {
+        // Function to move the loading screen up
+        function moveLoadingScreenUp() {
+            loadingScreen.style.transform = "translateY(-100%)";
+            // Mark the loading screen as shown
+            sessionStorage.setItem("loadingScreenShown", "true");
+        }
+
+        // Move the loading screen up after 5 seconds
+        setTimeout(moveLoadingScreenUp, 5000);
+    } else {
+        // Hide the loading screen immediately if it has already been shown
+        loadingScreen.style.display = "none";
+    }
 });
 
 
