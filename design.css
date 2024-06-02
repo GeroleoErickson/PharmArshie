@@ -18,7 +18,7 @@
     --transition: 0.3s all ease;
     --background-color-dark: #121515;
     --accent-color: #3EDDE3;
-    --primary-color: #17cfd5;
+    --primary-color: #00DBE6;
     --transition: 0.5s all ease;
     --secondary-color: #ff0080;
 
@@ -804,7 +804,7 @@ main .product-container .med-con .ratings{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(255, 255, 255, 0.511);
+    background-color: rgba(255, 255, 255, 0.3);
 }
 main .product-container .med-con .ratings h2{
     color: #363959;
@@ -851,9 +851,9 @@ main .products-categories .product-container .med-con .price span{
     aspect-ratio: 1/1;
     font-size: 2rem;
     padding: 0.3rem;
-    background-color: var(--primary-color);
+    background-color: var(--color-light);
     border-radius: 0.8rem;
-    color: white;
+    color: var(--color-dark);
     cursor: pointer;
 }
 main .product-container .med-con:hover{
@@ -916,7 +916,7 @@ main .product-container .med-con:hover{
         font-size: 1rem;
     }
     main .product-container .med-con .ratings h2 {
-        font-size: 1rem;
+        font-size: .8rem;
     }
     main .product-container .med-con .ratings .material-symbols-rounded{
         font-size: 1rem;
@@ -931,6 +931,7 @@ main .product-container .med-con:hover{
         aspect-ratio: 1 / 1;
         font-size: 1.5rem;
         border-radius: 0.8rem;
+        padding: .3rem;
     }
     .bottom-bar{
         padding: 1rem;
@@ -1030,7 +1031,7 @@ display: none;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    background-image: linear-gradient(180deg, #000000de, #0000007a), url(images/profile-cover.jpg);
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/profile-cover.jpg);
     background-size: cover;
     background-position: center;
     box-shadow: 0 12.5px 31.5px -2px rgba(0, 0, 0, 0.3);
@@ -1161,8 +1162,8 @@ display: none;
     }
     .user-profile-head .account-profile .account img{
         border-radius: 50%;
-        padding: .2rem;
-        border: .15rem solid var(--primary-color);
+        padding: .15rem;
+        border: .2rem solid var(--primary-color);
         width: 4rem;
     }
     .user-profile-head .account-profile .account{
@@ -2532,7 +2533,7 @@ main .account-container .orders-con{
 }
 
 .heart input:checked ~ .checkmark path {
-    fill: #FF5353;
+    fill: var(--secondary-color);
     stroke-width: 0;
 }
 
