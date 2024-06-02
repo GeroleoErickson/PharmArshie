@@ -665,7 +665,7 @@ header .blur2{
         display: none;
     }
     .sidebar{
-        gap: 3rem;
+        gap: 2rem;
         width: 200px;
     }
     .sidebar .sidelinks :where(p){
