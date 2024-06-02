@@ -633,24 +633,8 @@ header .blur2{
         color: #3EDDE3;
     }
 }
-@media (max-width: 480px){
-    header{
-        padding: 1rem;
-    }
-    header .search{
-        gap: .8rem;
 
-    }
-    header .profile .prof p{
-        display: none;
-    }
-    header nav .nav-links .controls{
-        display: none;
-    }
-    
-    
-}
-@media (max-width: 380px){
+@media (max-width: 480px){
     header{
         padding: 1rem;
         gap: 1rem;
@@ -665,14 +649,14 @@ header .blur2{
         display: none;
     }
     .sidebar{
-        gap: 2rem;
+        gap: 4rem;
         width: 200px;
     }
     .sidebar .sidelinks :where(p){
         font-size: 0.7rem;
     }
     .sidebar .sidelinks a{
-        padding: .6rem;
+        padding: .8rem .6rem;
     }
 }
 
