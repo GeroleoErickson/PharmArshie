@@ -649,7 +649,7 @@ header .blur2{
         display: none;
     }
     .sidebar{
-        gap: 4rem;
+        gap: 2.5rem;
         width: 200px;
     }
     .sidebar .sidelinks :where(p){
