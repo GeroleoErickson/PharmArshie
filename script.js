@@ -11,26 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Move the loading screen up after 5 seconds
     setTimeout(moveLoadingScreenUp, 5000);
 });
-// document.addEventListener('DOMContentLoaded', function() {
-//     const loadingScreen = document.querySelector('.loading-screen');
-//     const mainContent = document.querySelector('main'); 
 
-//     window.onload = function() {
-        
-//         const loadingDuration = 2000; 
-//         const transitionDuration = 500; 
-
-//         setTimeout(function() {
-        
-//             loadingScreen.classList.add('move-up');
-//             mainContent.classList.add('move-up');
-
-//             setTimeout(function() {
-//                 loadingScreen.style.display = 'none'; 
-//             }, transitionDuration); 
-//         }, loadingDuration); 
-//     };
-// });
 
 // Side Bar
 var navLinks = document.getElementById("sidebar")
