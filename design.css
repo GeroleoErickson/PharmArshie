@@ -577,7 +577,7 @@ header .blur2{
         border-radius: 2rem 0 0 2rem;
         z-index: 9999;
         padding: 2rem;
-        gap: 5rem;
+        gap: 4rem;
         transition: var(--transition);
     }
     .sidebar .back{
@@ -665,14 +665,14 @@ header .blur2{
         display: none;
     }
     .sidebar{
-        gap: 4rem;
+        gap: 3rem;
         width: 200px;
     }
     .sidebar .sidelinks :where(p){
         font-size: 0.7rem;
     }
     .sidebar .sidelinks a{
-        padding: 1rem .6rem;
+        padding: .6rem;
     }
 }
 
