@@ -2,21 +2,21 @@ document.addEventListener("DOMContentLoaded", function() {
     // Select the loading screen element
     const loadingScreen = document.querySelector(".loading-screen");
 
-    // Check if the loading screen has already been shown
+    // Check if the loading screen has already been shown in the current session
     const loadingScreenShown = sessionStorage.getItem("loadingScreenShown");
 
     if (!loadingScreenShown) {
         // Function to move the loading screen up
         function moveLoadingScreenUp() {
             loadingScreen.style.transform = "translateY(-100%)";
-            // Mark the loading screen as shown
+            // Mark the loading screen as shown for this session
             sessionStorage.setItem("loadingScreenShown", "true");
         }
 
         // Move the loading screen up after 5 seconds
         setTimeout(moveLoadingScreenUp, 5000);
     } else {
-        // Hide the loading screen immediately if it has already been shown
+        // Hide the loading screen immediately if it has already been shown in this session
         loadingScreen.style.display = "none";
     }
 });
