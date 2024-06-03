@@ -577,7 +577,7 @@ form .btn:hover{
 @media (max-width:480px) {
     .terms-conditions .terms-con{
         padding:  1rem;
-        border-radius: 1.5rem;
+        border-radius: 1rem;
     }
     .terms-conditions .terms-con .paragraph p{
         font-size: var(--bodyfont);
