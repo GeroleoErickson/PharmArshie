@@ -24,6 +24,8 @@
 
     /* Light Mode */
     --shadow: 0 1.5rem 2.5rem rgba(8, 38, 38, 0.09);
+    --sidebar-shadow: -17.5px 0 3rem 1rem rgba(8, 38, 38, 0.3);
+    --sidebar-light-transparent-bg: rgba(255, 255, 255, 0.8);
     --background-color-light: #f1f8f8;
     --color-white: white;
     --color-dark: #2f2f2f;
@@ -35,6 +37,8 @@
 .dark-theme{
     /* DarkMode */
     --shadow: 0 1.5rem 2.5rem #121515c7;
+    --sidebar-light-transparent-bg: rgba(24, 29, 30, 0.8);
+    --sidebar-shadow: -17.5px 0 3rem 1rem #121515c7;
     --background-color-light: #151a1a;
     --color-white: #1d2424;
     --color-dark: #fcfcfc;
@@ -572,7 +576,8 @@ header .blur2{
         flex-direction: column;
         width: 230px;
         height: 100%;
-        background-color: rgba(24, 29, 30, 0.8);
+        background-color: var(--sidebar-light-transparent-bg);
+        box-shadow: var(--sidebar-shadow);
         backdrop-filter: blur(60px);
         border-radius: 2rem 0 0 2rem;
         z-index: 9999;
@@ -582,7 +587,7 @@ header .blur2{
     }
     .sidebar .back{
         width: 100%;
-        color: white;
+        color: var(--color-dark);
         cursor: pointer;
     }
     .sidebar .sideprofile{
@@ -603,7 +608,7 @@ header .blur2{
     .sidebar .sideprofile .name{
         font-size: 1rem;
         font-weight: 600;
-        color: white;
+        color: var(--color-dark);
     }
     .sidebar .sidelinks{
         width: 100%;
@@ -613,16 +618,15 @@ header .blur2{
         align-items: center;
     }
     .sidebar .sidelinks a{
-        padding: 1rem 1rem 1rem 1rem;
+        padding: 1rem;
         width: 100%;
         display: flex;
         align-items: center;
         gap: .5rem;
-        color: white;
+        color: var(--color-dark);
     }
     .sidebar .sidelinks a :where(span, p){
-        font-weight: 300;
-        color: white;
+        color: var(--color-dark);
         transition: var(--transition);
     }
     .sidebar .sidelinks :where(p){
@@ -656,7 +660,7 @@ header .blur2{
         font-size: 0.7rem;
     }
     .sidebar .sidelinks a{
-        padding: .8rem .6rem;
+        padding: .8rem 0rem .8rem .7rem;
     }
 }
 
