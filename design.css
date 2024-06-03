@@ -460,8 +460,7 @@ form .btn:hover{
     border: 2.5px solid var(--primary-color);
 }
 .policy-links{
-    position: fixed;
-    bottom: 2rem;
+    padding: 0 2rem 2rem 2rem;
 }
 .policy-links:hover{
     scale: 1.15;
@@ -579,6 +578,7 @@ form .btn:hover{
 @media (max-width:480px) {
     .terms-conditions .terms-con{
         padding:  1rem;
+        border-radius: 1.5rem;
     }
     .terms-conditions .terms-con .paragraph p{
         font-size: var(--bodyfont);
