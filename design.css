@@ -302,7 +302,6 @@ body{
 /* Log in Form */
 .login-container form {
     position: relative;
-    transform: translateY(-2rem);
     display: flex;
     align-items: center;
     height: fit-content;
