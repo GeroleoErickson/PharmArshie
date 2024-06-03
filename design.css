@@ -281,6 +281,7 @@ body{
     width: 100%;
     height: 100dvh;
     overflow: hidden;
+    background-color: var(--background-color-light);
 }
 .login-content .login-container{
     display: flex;
