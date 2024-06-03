@@ -282,16 +282,13 @@ body{
 }
 .login-content .login-container{
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: auto;
     position: relative;
-    width: fit-content;
-    height: fit-content;
+    width: 100%;
+    height: 100%;
 }
-
-
 
 .login-darmode{
     width: 100%;
@@ -454,9 +451,6 @@ form .btn:hover{
     border: 2.5px solid var(--primary-color);
 }
 
-.login-content .login-container .privacy-link{
-    padding-top: 2rem;
-} 
 
 
 
