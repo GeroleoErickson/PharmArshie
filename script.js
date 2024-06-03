@@ -21,15 +21,25 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
+
+
+
+
 // Login
-document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById('login-form');
-    form.addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent the default form submission
-        console.log('Form submitted'); // Log for debugging
-        window.location.href = 'home.html'; // Redirect to home.html
-    });
-});
+// document.addEventListener('DOMContentLoaded', function() {
+//     const form = document.getElementById('login-form');
+//     form.addEventListener('submit', function(event) {
+//         event.preventDefault(); // Prevent the default form submission
+//         console.log('Form submitted'); // Log for debugging
+//         window.location.href = 'home.html'; // Redirect to home.html
+//     });
+// });
+
+
+
+
+
+
 
 // Side Bar
 var navLinks = document.getElementById("sidebar")

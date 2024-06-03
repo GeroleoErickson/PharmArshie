@@ -88,7 +88,7 @@
             <a href="#"><span class="material-symbols-rounded ">support_agent</span><p>Help & Support</p></a>
             <a href="#"><span class="material-symbols-rounded ">help</span><p>About Us</p></a>
             <a href="#"><span class="material-symbols-rounded ">call</span><p>Contacts</p></a>
-            <a href="#"><span class="material-symbols-rounded ">logout</span><p>Log-out</p></a>
+            <a href="#" id="logout-link"><span class="material-symbols-rounded ">logout</span><p>Log-out</p></a>
         </div>
     </div>
 
@@ -535,6 +535,15 @@
         <!-- End of Banner -->
     </main>
     <!-- End of Main Content -->
-    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const logoutLink = document.getElementById('logout-link');
+            logoutLink.addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent the default link behavior
+                localStorage.removeItem('loggedIn'); // Clear the logged in flag
+                window.location.href = 'index.html'; // Redirect to login page
+            });
+        });
+    </script>
 </body>
 </html>
