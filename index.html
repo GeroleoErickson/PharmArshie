@@ -13,7 +13,7 @@
     <script src="script.js"></script>
     
 </head>
-<body class="main-content">
+<body class="login-content">
     <!-- Navigation Bar-->
     <section class="loading-screen">
         <div class="loading-logo">
@@ -35,525 +35,52 @@
         </div>
     </section>
 
-    <header>
-        <nav>
-            <!-- Logo -->
-            <a href="index.html" class="logo">
-                <img src="images/logo-white.png" alt="">
-                <h1>PharmArshie</h1>
-            </a>
+    <div class="login-darmode">
+        <label class="switch theme-toggler" id="toggleDark">
+            <input type="checkbox">
+            <span class="slider"></span>
+        </label>
+    </div>
 
-            <!-- Navigational links -->
-            <div class="nav-links">
-                <div class="controls">
-                    <a href="index.html" class="active">Home</a>
-                    <a href="webpages/cart.html">Med Cart</a>
-                    <a href="webpages/notifications.html">Notifications</a>
-                    <a href="">About Us</a>
-                </div>
-                <label class="switch theme-toggler" id="toggleDark">
-                    <input type="checkbox">
-                    <span class="slider"></span>
+    <div class="login-container">
+        <form id="login-form">
+            <div class="user">
+                <img src="images/profile.jpg" alt="" width="100px">
+                <h1>Dave Geroleo</h1>
+            </div>
+            
+            <div class="input-box">
+                <input type="email" placeholder="Username" required>
+                <i class='bx bx-user'></i>
+            </div>
+
+            <div class="input-box">
+                <input type="password" placeholder="Password" required>
+                <i class='bx bx-lock'></i>
+            </div>
+
+            <div class="remember-forgot">
+                <label>
+                    <input type="checkbox"> Remember me
                 </label>
+                <a href="#">Forgot password?</a>
             </div>
-        </nav>
-
-        <div class="profile">
-            <div class="loc">
-                <p>Location:</p>
-                <select name="" id="">
-                    <option value="" selected>Baliming Boac Marinduque</option>
-                    <option value="">Batasan Quezon City</option>
-                </select>
+            <div class="or">
+                <span class="line"></span>
+                <p>or login using</p>
+                <span class="line"></span>
             </div>
-            <a href="webpages/profile.html" class="prof">
-                <p id="name">Dave Geroleo</p>
-                <img src="images/profile.jpg" alt="" width="50px">
-            </a>
-        </div>
-
-
-        <div class="search">
-            <div class="search-bar">
-                <input type="text" placeholder="Search Medicine">
-                <i class='bx bx-search' ></i>
+            <div class="socials">
+                <img src="images/facebook.png" alt="" width="40px">
+                <img src="images/google.png" alt="" width="40px">
+                <img src="images/microsoft.png" alt="" width="40px">
             </div>
-            <span class="material-symbols-rounded" id="camera">photo_camera</span>
-            <span class="material-symbols-rounded">prescriptions</span>
-        </div>
-        <span class="blur"></span>
-        <span class="blur2"></span>
-    </header>
 
-    <div class="bottom-bar">
-        <div class="bottom-ctrls">
-            <a href="#"><span class="material-symbols-rounded active">home</span></a>
-            <a href="webpages/notifications.html"><span class="material-symbols-rounded">notifications</span></a>
-            <a href="webpages/cart.html"><span class="material-symbols-rounded">shopping_cart</span></a>
-            <a href="#"><span class="material-symbols-rounded" onclick="showMenu()">menu</span></a>
-        </div>
+            <button type="submit" class="btn">
+                Login
+            </button>
+        </form>
     </div>
-
-    <div class="sidebar" id="sidebar">
-        <span class="material-symbols-rounded back" onclick="hideMenu()">keyboard_return</span>
-        <a href="webpages/profile.html" class="sideprofile">
-            <img src="images/profile.jpg" alt="" width="80px">
-            <p class="name">Dave Geroleo</p>
-        </a>
-        <div class="sidelinks">
-            <a href="#"><span class="material-symbols-rounded active">home</span><p class="active">Home</p></a>
-            <a href="webpages/cart.html"><span class="material-symbols-rounded ">shopping_cart</span><p>My Cart</p></a>
-            <a href="#"><span class="material-symbols-rounded ">volunteer_activism</span><p>Donations</p></a>
-            <a href="#"><span class="material-symbols-rounded ">settings</span><p>Settings</p></a>
-            <a href="#"><span class="material-symbols-rounded ">support_agent</span><p>Help & Support</p></a>
-            <a href="#"><span class="material-symbols-rounded ">help</span><p>About Us</p></a>
-            <a href="#"><span class="material-symbols-rounded ">call</span><p>Contacts</p></a>
-            <a href="#"><span class="material-symbols-rounded ">logout</span><p>Log-out</p></a>
-        </div>
-    </div>
-
-    <!-- Main Content -->
-    <main>
-        <!-- Banner -->
-        <div class="banner-wrapper">
-            <div class="banner">
-                <img src="images/banner.png" alt="Banner 1">
-                <img src="images/banner2.png" alt="Banner 2">
-                <img src="images/banner3.png" alt="Banner 3">
-            </div>
-        </div>
-        <!-- End Of Banner -->
-        <div class="products-categories">
-            <div class="categories">
-                <a href="#" class="active">Personal Care</a>
-                <a href="#">Health Care</a>
-                <a href="#">Covid Care</a>
-                <a href="#">Medicines</a>
-                <a href="#">Antibiotics</a>
-                <a href="#">Vitamins</a>
-                <a href="#">Baby Care</a>
-                <a href="#">Pet Care</a>
-            </div>
-            <div class="product-container">
-                <a href="webpages/product-details.html" class="med-con">
-                    <div class="ratings">
-                        <span class="material-symbols-rounded active">favorite</span>
-                        <h2>4.8</h2>
-                    </div>
-                    <img src="images/Medicine.jpg" alt="" width="200px">
-                    <div class="product-details">
-                        <h2>Omeprazole</h2>
-                        <p>40mg per Capsule</p>
-                    </div>
-                    <div class="price">
-                        <h3>Php 30.00</h3>
-                        <span class="material-symbols-rounded">add</span>
-                    </div>
-                </a>
-
-                <a href="webpages/product-details.html" class="med-con">
-                    <div class="ratings">
-                        <span class="material-symbols-rounded active">favorite</span>
-                        <h2>4.8</h2>
-                    </div>
-                    <img src="images/Medicine.jpg" alt="" width="200px">
-                    <div class="product-details">
-                        <h2>Omeprazole</h2>
-                        <p>40mg per Capsule</p>
-                    </div>
-                    <div class="price">
-                        <h3>Php 30.00</h3>
-                        <span class="material-symbols-rounded">add</span>
-                    </div>
-                </a>
-
-                <a href="webpages/product-details.html" class="med-con">
-                    <div class="ratings">
-                        <span class="material-symbols-rounded active">favorite</span>
-                        <h2>4.8</h2>
-                    </div>
-                    <img src="images/Medicine.jpg" alt="" width="200px">
-                    <div class="product-details">
-                        <h2>Omeprazole</h2>
-                        <p>40mg per Capsule</p>
-                    </div>
-                    <div class="price">
-                        <h3>Php 30.00</h3>
-                        <span class="material-symbols-rounded">add</span>
-                    </div>
-                </a>
-
-                <a href="webpages/product-details.html" class="med-con">
-                    <div class="ratings">
-                        <span class="material-symbols-rounded active">favorite</span>
-                        <h2>4.8</h2>
-                    </div>
-                    <img src="images/Medicine.jpg" alt="" width="200px">
-                    <div class="product-details">
-                        <h2>Omeprazole</h2>
-                        <p>40mg per Capsule</p>
-                    </div>
-                    <div class="price">
-                        <h3>Php 30.00</h3>
-                        <span class="material-symbols-rounded">add</span>
-                    </div>
-                </a>
-
-                <a href="webpages/product-details.html" class="med-con">
-                    <div class="ratings">
-                        <span class="material-symbols-rounded active">favorite</span>
-                        <h2>4.8</h2>
-                    </div>
-                    <img src="images/Medicine.jpg" alt="" width="200px">
-                    <div class="product-details">
-                        <h2>Omeprazole</h2>
-                        <p>40mg per Capsule</p>
-                    </div>
-                    <div class="price">
-                        <h3>Php 30.00</h3>
-                        <span class="material-symbols-rounded">add</span>
-                    </div>
-                </a>
-
-                <a href="webpages/product-details.html" class="med-con">
-                    <div class="ratings">
-                        <span class="material-symbols-rounded active">favorite</span>
-                        <h2>4.8</h2>
-                    </div>
-                    <img src="images/Medicine.jpg" alt="" width="200px">
-                    <div class="product-details">
-                        <h2>Omeprazole</h2>
-                        <p>40mg per Capsule</p>
-                    </div>
-                    <div class="price">
-                        <h3>Php 30.00</h3>
-                        <span class="material-symbols-rounded">add</span>
-                    </div>
-                </a>
-
-                <a href="webpages/product-details.html" class="med-con">
-                    <div class="ratings">
-                        <span class="material-symbols-rounded active">favorite</span>
-                        <h2>4.8</h2>
-                    </div>
-                    <img src="images/Medicine.jpg" alt="" width="200px">
-                    <div class="product-details">
-                        <h2>Omeprazole</h2>
-                        <p>40mg per Capsule</p>
-                    </div>
-                    <div class="price">
-                        <h3>Php 30.00</h3>
-                        <span class="material-symbols-rounded">add</span>
-                    </div>
-                </a>
-
-                <a href="webpages/product-details.html" class="med-con">
-                    <div class="ratings">
-                        <span class="material-symbols-rounded active">favorite</span>
-                        <h2>4.8</h2>
-                    </div>
-                    <img src="images/Medicine.jpg" alt="" width="200px">
-                    <div class="product-details">
-                        <h2>Omeprazole</h2>
-                        <p>40mg per Capsule</p>
-                    </div>
-                    <div class="price">
-                        <h3>Php 30.00</h3>
-                        <span class="material-symbols-rounded">add</span>
-                    </div>
-                </a>
-
-                <a href="webpages/product-details.html" class="med-con">
-                    <div class="ratings">
-                        <span class="material-symbols-rounded active">favorite</span>
-                        <h2>4.8</h2>
-                    </div>
-                    <img src="images/Medicine.jpg" alt="" width="200px">
-                    <div class="product-details">
-                        <h2>Omeprazole</h2>
-                        <p>40mg per Capsule</p>
-                    </div>
-                    <div class="price">
-                        <h3>Php 30.00</h3>
-                        <span class="material-symbols-rounded">add</span>
-                    </div>
-                </a>
-
-                <a href="webpages/product-details.html" class="med-con">
-                    <div class="ratings">
-                        <span class="material-symbols-rounded active">favorite</span>
-                        <h2>4.8</h2>
-                    </div>
-                    <img src="images/Medicine.jpg" alt="" width="200px">
-                    <div class="product-details">
-                        <h2>Omeprazole</h2>
-                        <p>40mg per Capsule</p>
-                    </div>
-                    <div class="price">
-                        <h3>Php 30.00</h3>
-                        <span class="material-symbols-rounded">add</span>
-                    </div>
-                </a>
-
-                <a href="webpages/product-details.html" class="med-con">
-                    <div class="ratings">
-                        <span class="material-symbols-rounded active">favorite</span>
-                        <h2>4.8</h2>
-                    </div>
-                    <img src="images/Medicine.jpg" alt="" width="200px">
-                    <div class="product-details">
-                        <h2>Omeprazole</h2>
-                        <p>40mg per Capsule</p>
-                    </div>
-                    <div class="price">
-                        <h3>Php 30.00</h3>
-                        <span class="material-symbols-rounded">add</span>
-                    </div>
-                </a>
-
-                <a href="webpages/product-details.html" class="med-con">
-                    <div class="ratings">
-                        <span class="material-symbols-rounded active">favorite</span>
-                        <h2>4.8</h2>
-                    </div>
-                    <img src="images/Medicine.jpg" alt="" width="200px">
-                    <div class="product-details">
-                        <h2>Omeprazole</h2>
-                        <p>40mg per Capsule</p>
-                    </div>
-                    <div class="price">
-                        <h3>Php 30.00</h3>
-                        <span class="material-symbols-rounded">add</span>
-                    </div>
-                </a>
-
-                <a href="webpages/product-details.html" class="med-con">
-                    <div class="ratings">
-                        <span class="material-symbols-rounded active">favorite</span>
-                        <h2>4.8</h2>
-                    </div>
-                    <img src="images/Medicine.jpg" alt="" width="200px">
-                    <div class="product-details">
-                        <h2>Omeprazole</h2>
-                        <p>40mg per Capsule</p>
-                    </div>
-                    <div class="price">
-                        <h3>Php 30.00</h3>
-                        <span class="material-symbols-rounded">add</span>
-                    </div>
-                </a>
-
-                <a href="webpages/product-details.html" class="med-con">
-                    <div class="ratings">
-                        <span class="material-symbols-rounded active">favorite</span>
-                        <h2>4.8</h2>
-                    </div>
-                    <img src="images/Medicine.jpg" alt="" width="200px">
-                    <div class="product-details">
-                        <h2>Omeprazole</h2>
-                        <p>40mg per Capsule</p>
-                    </div>
-                    <div class="price">
-                        <h3>Php 30.00</h3>
-                        <span class="material-symbols-rounded">add</span>
-                    </div>
-                </a>
-
-                <a href="webpages/product-details.html" class="med-con">
-                    <div class="ratings">
-                        <span class="material-symbols-rounded active">favorite</span>
-                        <h2>4.8</h2>
-                    </div>
-                    <img src="images/Medicine.jpg" alt="" width="200px">
-                    <div class="product-details">
-                        <h2>Omeprazole</h2>
-                        <p>40mg per Capsule</p>
-                    </div>
-                    <div class="price">
-                        <h3>Php 30.00</h3>
-                        <span class="material-symbols-rounded">add</span>
-                    </div>
-                </a>
-
-                <a href="webpages/product-details.html" class="med-con">
-                    <div class="ratings">
-                        <span class="material-symbols-rounded active">favorite</span>
-                        <h2>4.8</h2>
-                    </div>
-                    <img src="images/Medicine.jpg" alt="" width="200px">
-                    <div class="product-details">
-                        <h2>Omeprazole</h2>
-                        <p>40mg per Capsule</p>
-                    </div>
-                    <div class="price">
-                        <h3>Php 30.00</h3>
-                        <span class="material-symbols-rounded">add</span>
-                    </div>
-                </a>
-
-                <a href="webpages/product-details.html" class="med-con">
-                    <div class="ratings">
-                        <span class="material-symbols-rounded active">favorite</span>
-                        <h2>4.8</h2>
-                    </div>
-                    <img src="images/Medicine.jpg" alt="" width="200px">
-                    <div class="product-details">
-                        <h2>Omeprazole</h2>
-                        <p>40mg per Capsule</p>
-                    </div>
-                    <div class="price">
-                        <h3>Php 30.00</h3>
-                        <span class="material-symbols-rounded">add</span>
-                    </div>
-                </a>
-
-                <a href="webpages/product-details.html" class="med-con">
-                    <div class="ratings">
-                        <span class="material-symbols-rounded active">favorite</span>
-                        <h2>4.8</h2>
-                    </div>
-                    <img src="images/Medicine.jpg" alt="" width="200px">
-                    <div class="product-details">
-                        <h2>Omeprazole</h2>
-                        <p>40mg per Capsule</p>
-                    </div>
-                    <div class="price">
-                        <h3>Php 30.00</h3>
-                        <span class="material-symbols-rounded">add</span>
-                    </div>
-                </a>
-
-                <a href="webpages/product-details.html" class="med-con">
-                    <div class="ratings">
-                        <span class="material-symbols-rounded active">favorite</span>
-                        <h2>4.8</h2>
-                    </div>
-                    <img src="images/Medicine.jpg" alt="" width="200px">
-                    <div class="product-details">
-                        <h2>Omeprazole</h2>
-                        <p>40mg per Capsule</p>
-                    </div>
-                    <div class="price">
-                        <h3>Php 30.00</h3>
-                        <span class="material-symbols-rounded">add</span>
-                    </div>
-                </a>
-
-                <a href="webpages/product-details.html" class="med-con">
-                    <div class="ratings">
-                        <span class="material-symbols-rounded active">favorite</span>
-                        <h2>4.8</h2>
-                    </div>
-                    <img src="images/Medicine.jpg" alt="" width="200px">
-                    <div class="product-details">
-                        <h2>Omeprazole</h2>
-                        <p>40mg per Capsule</p>
-                    </div>
-                    <div class="price">
-                        <h3>Php 30.00</h3>
-                        <span class="material-symbols-rounded">add</span>
-                    </div>
-                </a>
-
-                <a href="webpages/product-details.html" class="med-con">
-                    <div class="ratings">
-                        <span class="material-symbols-rounded active">favorite</span>
-                        <h2>4.8</h2>
-                    </div>
-                    <img src="images/Medicine.jpg" alt="" width="200px">
-                    <div class="product-details">
-                        <h2>Omeprazole</h2>
-                        <p>40mg per Capsule</p>
-                    </div>
-                    <div class="price">
-                        <h3>Php 30.00</h3>
-                        <span class="material-symbols-rounded">add</span>
-                    </div>
-                </a>
-
-                <a href="webpages/product-details.html" class="med-con">
-                    <div class="ratings">
-                        <span class="material-symbols-rounded active">favorite</span>
-                        <h2>4.8</h2>
-                    </div>
-                    <img src="images/Medicine.jpg" alt="" width="200px">
-                    <div class="product-details">
-                        <h2>Omeprazole</h2>
-                        <p>40mg per Capsule</p>
-                    </div>
-                    <div class="price">
-                        <h3>Php 30.00</h3>
-                        <span class="material-symbols-rounded">add</span>
-                    </div>
-                </a>
-
-                <a href="webpages/product-details.html" class="med-con">
-                    <div class="ratings">
-                        <span class="material-symbols-rounded active">favorite</span>
-                        <h2>4.8</h2>
-                    </div>
-                    <img src="images/Medicine.jpg" alt="" width="200px">
-                    <div class="product-details">
-                        <h2>Omeprazole</h2>
-                        <p>40mg per Capsule</p>
-                    </div>
-                    <div class="price">
-                        <h3>Php 30.00</h3>
-                        <span class="material-symbols-rounded">add</span>
-                    </div>
-                </a>
-
-                <a href="webpages/product-details.html" class="med-con">
-                    <div class="ratings">
-                        <span class="material-symbols-rounded active">favorite</span>
-                        <h2>4.8</h2>
-                    </div>
-                    <img src="images/Medicine.jpg" alt="" width="200px">
-                    <div class="product-details">
-                        <h2>Omeprazole</h2>
-                        <p>40mg per Capsule</p>
-                    </div>
-                    <div class="price">
-                        <h3>Php 30.00</h3>
-                        <span class="material-symbols-rounded">add</span>
-                    </div>
-                </a>
-
-                <a href="webpages/product-details.html" class="med-con">
-                    <div class="ratings">
-                        <span class="material-symbols-rounded active">favorite</span>
-                        <h2>4.8</h2>
-                    </div>
-                    <img src="images/Medicine.jpg" alt="" width="200px">
-                    <div class="product-details">
-                        <h2>Omeprazole</h2>
-                        <p>40mg per Capsule</p>
-                    </div>
-                    <div class="price">
-                        <h3>Php 30.00</h3>
-                        <span class="material-symbols-rounded">add</span>
-                    </div>
-                </a>
-
-                <a href="webpages/product-details.html" class="med-con">
-                    <div class="ratings">
-                        <span class="material-symbols-rounded active">favorite</span>
-                        <h2>4.8</h2>
-                    </div>
-                    <img src="images/Medicine.jpg" alt="" width="200px">
-                    <div class="product-details">
-                        <h2>Omeprazole</h2>
-                        <p>40mg per Capsule</p>
-                    </div>
-                    <div class="price">
-                        <h3>Php 30.00</h3>
-                        <span class="material-symbols-rounded">add</span>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <!-- End of Banner -->
-    </main>
     <!-- End of Main Content -->
     
 </body>
