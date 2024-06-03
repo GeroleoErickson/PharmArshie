@@ -24,7 +24,7 @@
 
     /* Light Mode */
     --shadow: 0 1.5rem 2.5rem rgba(8, 38, 38, 0.09);
-    --sidebar-shadow: -17.5px 0 3rem 1rem rgba(8, 38, 38, 0.2);
+    --sidebar-shadow: -17.5px 0 3rem 1rem rgba(8, 38, 38, 0.3);
     --sidebar-light-transparent-bg: rgba(255, 255, 255, 0.8);
     --background-color-light: #f1f8f8;
     --color-white: white;
