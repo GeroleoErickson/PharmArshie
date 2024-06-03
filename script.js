@@ -37,10 +37,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-
-
-
-
 // Side Bar
 var navLinks = document.getElementById("sidebar")
     function showMenu(){
@@ -127,4 +123,31 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// Terms and Conditions Popup
+{/* <div class="sidebar" id="sidebar">
+        <span class="material-symbols-rounded back" onclick="hideMenu()">keyboard_return</span>
+        <a href="webpages/profile.html" class="sideprofile">
+            <img src="images/profile.jpg" alt="" width="80px">
+            <p class="name">Dave Geroleo</p>
+        </a>
+        <div class="sidelinks">
+            <a href="#"><span class="material-symbols-rounded active">home</span><p class="active">Home</p></a>
+            <a href="webpages/cart.html"><span class="material-symbols-rounded ">shopping_cart</span><p>My Cart</p></a>
+            <a href="#"><span class="material-symbols-rounded ">volunteer_activism</span><p>Donations</p></a>
+            <a href="#"><span class="material-symbols-rounded ">settings</span><p>Settings</p></a>
+            <a href="#"><span class="material-symbols-rounded ">support_agent</span><p>Help & Support</p></a>
+            <a href="#"><span class="material-symbols-rounded ">help</span><p>About Us</p></a>
+            <a href="#"><span class="material-symbols-rounded ">call</span><p>Contacts</p></a>
+            <a href="#" id="logout-link"><span class="material-symbols-rounded ">logout</span><p>Log-out</p></a>
+        </div>
+    </div> */}
 
+    var navLinks = document.getElementById("termsPopup")
+    function ShowTerms(){
+        termsPopup.style.bottom = "0"
+        document.addEventListener('click', handleClickOutside, true);
+    }
+    function hideTerms(){
+        termsPopup.style.bottom = "-1000px"
+        document.addEventListener('click', handleClickOutside, true);
+    }

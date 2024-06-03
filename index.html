@@ -80,10 +80,90 @@
                 Login
             </button>
         </form>
-
+        <p class="policy-links" id="terms-and-condition" onclick="ShowTerms()">Terms and Conditions</p>
     </div>
     
+    <div class="terms-conditions" id="termsPopup">
+        <div class="terms-con">
+            <div class="paragraph">
+                <h3>Terms and Conditions</h3>
+                <p>These Terms and Conditions ("Agreement") govern your use of the 
+                    PharmArshie Medshop Hybrid Application ("App") and outline our 
+                    privacy policy, user agreement, and non-disclosure agreement. 
+                    By accessing or using the App, you agree to comply with and be 
+                    bound by these terms. If you do not agree to these terms, please 
+                    do not use the App.</p>
+            </div>
 
+            <div class="paragraph">
+                <h3>Privacy Policy Statement</h3>
+                <p>1.1 Commitment to Privacy: We are committed to maintaining the 
+                    accuracy, confidentiality, and security of your personally 
+                    identifiable information ("Personal Information"). This privacy 
+                    policy outlines our actions regarding the collection, use, and 
+                    disclosure of Personal Information.</p>
+                <p>1.2 Standards and Legislation: Our privacy policy is based upon 
+                    the values set by the Canadian Standards Association's Model Code 
+                    for the Protection of Personal Information and the Electronic 
+                    Documents Act.</p>
+                <p>1.3 Collection and Use of Information: We collect Personal 
+                    Information necessary to provide and enhance our services. 
+                    This includes, but is not limited to, information you provide 
+                    when registering, making a purchase, or communicating with us.</p>
+                <p>1.4 Disclosure of Information: Personal Information will not be disclosed 
+                    to third parties without your explicit consent, except as required by law. 
+                    We ensure that any third party with whom we share information adheres to 
+                    our privacy standards.</p>
+                <p>1.5 Security Measures: We employ industry-standard security measures to 
+                    protect your data from unauthorized access, ensuring your Personal Information 
+                    remains confidential.</p>
+            </div>
+
+            <div class="paragraph">
+                <h3>User Agreement</h3>
+                <p>2.1 Acceptance of Terms: By using the App, you agree to these terms and conditions. 
+                    The App provides a comprehensive healthcare experience, allowing you to browse and 
+                    purchase a wide range of medicines and health products.</p>
+                <p>2.2 User Responsibilities: You are responsible for ensuring that the information 
+                    you provide is accurate and up-to-date. Misuse of the App, including providing 
+                    false information, is prohibited.</p>
+                <p>2.3 Modifications to the App: We reserve the right to modify or discontinue the 
+                    App at any time without prior notice. We are not liable for any modifications, 
+                    suspensions, or discontinuations of the App.</p>
+            </div>
+
+            <div class="paragraph">
+                <h3>Non-Disclosure Agreement</h3>
+                <p>3.1 Confidentiality: PharmArshie Medshop respects the confidentiality of your 
+                    personal and health information. We commit to not disclose any of your personal 
+                    data to third parties without your explicit consent, except as required by law.</p>
+                <p>3.2 Security: We employ industry-standard security measures to protect your data 
+                    from unauthorized access and ensure that your information remains confidential.</p>
+                <p>3.3 Legal Requirements: In certain circumstances, we may be required by law to disclose 
+                    your Personal Information. In such cases, we will ensure that we only disclose the 
+                    minimum amount of information necessary to comply with legal requirements.</p>
+            </div>
+
+            <div class="paragraph">
+                <h3>General Provisions</h3>
+                <p>4.1 Amendments: We reserve the right to amend these terms and conditions at any time. 
+                    Any amendments will be posted on the App, and your continued use of the App constitutes 
+                    acceptance of these changes.</p>
+                <p>4.2 Governing Law: This Agreement shall be governed by and construed in accordance with 
+                    the laws of the jurisdiction in which PharmArshie Medshop operates.</p>
+                <p>4.3 Contact Information: If you have any questions or concerns about these terms and 
+                    conditions, please contact us at pharmarshie@gmail.com
+                    <br><br>
+                    By using the PharmArshie Medshop Hybrid Application, you acknowledge that you have read, 
+                    understood, and agree to be bound by these terms and conditions.
+                    </p>
+            </div>
+            <div class="reject-accept">
+                <button id="reject" onclick="hideTerms()">Reject</button>
+                <button id="accept" onclick="hideTerms()">Accept</button>
+            </div>
+        </div>
+    </div>
 
     <!-- End of Main Content -->
     <script>
@@ -100,6 +180,7 @@
                 localStorage.setItem('loggedIn', 'true'); // Set the logged in flag
                 window.location.href = 'home.html'; // Redirect to home.html
             });
+            
         });
     </script>
 </body>
