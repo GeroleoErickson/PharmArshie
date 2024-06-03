@@ -307,7 +307,7 @@ body{
 }
 .login-container form .user{
     text-align: center;
-    margin: 2rem 0 3rem 0;
+    margin: 0rem 0 3rem 0;
 }
 .login-container form .user img{
     border-radius: 50%;
