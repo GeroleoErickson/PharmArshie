@@ -460,7 +460,7 @@ form .btn:hover{
     border: 2.5px solid var(--primary-color);
 }
 .policy-links{
-    padding: 0 2rem 2rem 2rem;
+    cursor: pointer;
 }
 .policy-links:hover{
     scale: 1.15;
