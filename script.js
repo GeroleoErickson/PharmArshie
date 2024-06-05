@@ -1,39 +1,17 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Select the loading screen element
     const loadingScreen = document.querySelector(".loading-screen");
-
-    // Check if the loading screen has already been shown in the current session
     const loadingScreenShown = sessionStorage.getItem("loadingScreenShown");
 
     if (!loadingScreenShown) {
-        // Function to move the loading screen up
         function moveLoadingScreenUp() {
             loadingScreen.style.transform = "translateY(-100%)";
-            // Mark the loading screen as shown for this session
             sessionStorage.setItem("loadingScreenShown", "true");
         }
-
-        // Move the loading screen up after 5 seconds
         setTimeout(moveLoadingScreenUp, 5000);
     } else {
-        // Hide the loading screen immediately if it has already been shown in this session
         loadingScreen.style.display = "none";
     }
 });
-
-
-
-
-
-// Login
-// document.addEventListener('DOMContentLoaded', function() {
-//     const form = document.getElementById('login-form');
-//     form.addEventListener('submit', function(event) {
-//         event.preventDefault(); // Prevent the default form submission
-//         console.log('Form submitted'); // Log for debugging
-//         window.location.href = 'home.html'; // Redirect to home.html
-//     });
-// });
 
 
 
@@ -47,7 +25,6 @@ var navLinks = document.getElementById("sidebar")
         sidebar.style.right = "-17rem"
         document.addEventListener('click', handleClickOutside, true);
     }
-    
     function handleClickOutside(event) {
         if (!sidebar.contains(event.target) && event.target.tagName !== "BUTTON" && !event.target.classList.contains('material-symbols-rounded')) {
             hideMenu();
@@ -75,17 +52,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('DOMContentLoaded', function() {
     const toggleSwitch = document.querySelector('#toggleDark input');
-
-    // Retrieve dark mode preference from localStorage
     const darkModeEnabled = localStorage.getItem('dark-mode') === 'enabled';
-
-    // Apply dark theme class to body if dark mode is enabled
     if (darkModeEnabled) {
         document.documentElement.classList.add('dark-theme');
         toggleSwitch.checked = true;
     }
-
-    // Add event listener for theme toggle
     toggleSwitch.addEventListener('change', function() {
         if (toggleSwitch.checked) {
             document.documentElement.classList.add('dark-theme');
