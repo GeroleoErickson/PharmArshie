@@ -80,7 +80,7 @@ body{
     justify-content: space-around;
     transition: transform .5s ease;
     z-index: 9999999; 
-    opacity: 1; /* Ensure the loading screen is initially visible */
+    opacity: 1; 
 }
 
 .loading-logo {
@@ -88,7 +88,7 @@ body{
     display: flex;
     gap: 2rem;
     align-items: center;
-    opacity: 0; /* Initially hide the logo */
+    opacity: 0; 
 }
 
 .loading-logo .loading-logo-name {
