@@ -130,6 +130,6 @@ document.addEventListener('DOMContentLoaded', function() {
         document.addEventListener('click', handleClickOutside, true);
     }
     function hideTerms(){
-        termsPopup.style.bottom = "-1000px"
+        termsPopup.style.bottom = "-1500px"
         document.addEventListener('click', handleClickOutside, true);
     }
