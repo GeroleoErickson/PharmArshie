@@ -1,3 +1,4 @@
+//Loading Animation
 document.addEventListener("DOMContentLoaded", function() {
     const loadingScreen = document.querySelector(".loading-screen");
     const loadingScreenShown = sessionStorage.getItem("loadingScreenShown");
