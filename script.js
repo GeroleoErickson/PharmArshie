@@ -50,7 +50,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 //Dark Mode 
-
 document.addEventListener('DOMContentLoaded', function() {
     const toggleSwitch = document.querySelector('#toggleDark input');
     const darkModeEnabled = localStorage.getItem('dark-mode') === 'enabled';
@@ -95,7 +94,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 // Terms and Conditions Popup
-
     var navLinks = document.getElementById("termsPopup")
     function ShowTerms(){
         termsPopup.style.bottom = "0"
