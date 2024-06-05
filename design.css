@@ -1539,10 +1539,10 @@ address p{
 }
 main .account-content{
     width: 100%;
-    height: fit-content;
+    height: 100%;
     gap: 2rem;
     display: flex;
-    align-items: center;
+    align-items: start;
     padding: 0 2rem 2rem;
 }
 main .account-container{
@@ -1733,7 +1733,27 @@ main .account-container .orders-con{
     color: var(--primary-color);
 }
 
-
+.account-container .orders-con .ordered-items{
+    margin: auto;
+    position: relative;
+    width: 100%;
+    aspect-ratio: 21/8.4;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.account-container .orders-con .ordered-items .no-orders{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.account-container .orders-con .ordered-items .no-orders img{
+    width: 100px;
+}
+.account-container .orders-con .ordered-items .no-orders p{
+    font-size: 1rem;
+}
 
 @media (max-width: 1380px) {
     main .account-content{
@@ -1969,7 +1989,12 @@ main .account-container .orders-con{
     .account-container .orders-con .order-categories p{
         font-size: var(--bodyfont);
     }
-    
+    .account-container .orders-con .ordered-items .no-orders img{
+        width: 80px;
+    }
+    .account-container .orders-con .ordered-items .no-orders p{
+        font-size: var(--bodyfont);
+    }
 }
 
 @media (max-width: 380px){
@@ -2021,6 +2046,12 @@ main .account-container .orders-con{
     }
     .account-container .orders-con .order-categories {
         padding: .8rem;
+    }
+    .account-container .orders-con .ordered-items .no-orders img{
+        width: 50px;
+    }
+    .account-container .orders-con .ordered-items .no-orders p{
+        font-size: .55rem;
     }
 }
 
